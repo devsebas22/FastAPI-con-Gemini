@@ -1,7 +1,9 @@
 from fastapi import FastAPI
+from dotenv import load_dotenv
 
 app = FastAPI()
 
+load_dotenv()
 
 @app.get("/llm{prompt}")
 async def read_root(prompt):
@@ -9,7 +11,7 @@ async def read_root(prompt):
     from google import genai
 
     
-    client = genai.Client(api_key="AIzaSyDGzlRsxv2-r9x1j495VWp5DIVWdkfVwuA")
+    client = genai.Client()
 
     response = client.models.generate_content(
         model="gemini-3-flash-preview", contents=prompt
