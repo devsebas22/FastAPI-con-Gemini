@@ -9,7 +9,7 @@ async def read_root(prompt):
     from google import genai
 
     
-    client = genai.Client(api_key="AIzaSyBmT5Vb2Py7vX1WZrXzGCLNYjqggYRKYs8")
+    client = genai.Client(api_key="AIzaSyDGzlRsxv2-r9x1j495VWp5DIVWdkfVwuA")
 
     response = client.models.generate_content(
         model="gemini-3-flash-preview", contents=prompt
