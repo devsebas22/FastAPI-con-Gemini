@@ -14,7 +14,7 @@ async def read_root(prompt):
     client = genai.Client()
 
     response = client.models.generate_content(
-        model="gemini-3-flash-preview", contents=prompt
+        model="gemini-3.1-pro-preview", contents=prompt
     )
     print(response.text)
 
