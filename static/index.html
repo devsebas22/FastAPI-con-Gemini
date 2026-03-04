@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>LLM Playground</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>LLM Playground</h1>
+
+      <label for="model">Modelo</label>
+      <select id="model">
+        <option value="gemini-3-flash-preview">gemini-3-flash-preview</option>
+      </select>
+
+      <label for="prompt">Prompt</label>
+      <textarea id="prompt" rows="6" placeholder="Escribe tu pregunta o instrucción..."></textarea>
+
+      <div class="actions">
+        <button id="send">Enviar</button>
+        <div id="status" class="status"></div>
+      </div>
+
+      <section id="response" class="response">
+        <h2>Respuesta</h2>
+        <pre id="respText">Aquí aparecerá la respuesta</pre>
+      </section>
+    </main>
+
+    <footer class="footer">Hecho con ❤️ — Interfaz simple y responsive</footer>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

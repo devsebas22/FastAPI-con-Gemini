@@ -1,4 +1,15 @@
-*.json
+# Ignorar archivos del entorno virtual
 .venv/
-.env/
+venv/
+
+# Archivos Python cacheados
 __pycache__/
+
+# Archivos de configuración del entorno
+.env
+
+# Archivos específicos de PyCharm
+.idea/
+
+# Archivos de configuración específicos de Visual Studio Code
+.vscode/
